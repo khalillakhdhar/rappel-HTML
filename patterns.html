@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <label for="country_code">Country code:</label>
+        <input required type="text" id="country_code" name="country_code"
+        pattern="[A-Za-z]{3}" title="Three letter country code">
+<br>
+<label for="name">Nom:</label>
+        <input required type="text" id="name" name="nom"
+        pattern="[A-Za-z éè']{3,20}" title="le nom doit être alphabétique">
+<!-- pattern="[liste des valeur]{min,max}" si vous laissez une coté vide=> non défini-->
+      <br>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
