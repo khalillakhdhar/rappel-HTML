@@ -16,7 +16,12 @@
         <input required type="text" id="name" name="nom"
         pattern="[A-Za-z éè']{3,20}" title="le nom doit être alphabétique">
 <!-- pattern="[liste des valeur]{min,max}" si vous laissez une coté vide=> non défini-->
+
       <br>
+      <label for="tel">Téléphone:</label>
+      <input required type="text" id="tel" name="tel"
+      pattern="[0-9+ ]{8,20}" title="numéro de téléphone valide">
+<br>
         <button type="submit">Envoyer</button>
     </form>
 </body>
