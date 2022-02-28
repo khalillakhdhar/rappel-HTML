@@ -9,6 +9,7 @@
 <body>
     <form  method="post">
         Email:<input type="email" name="mail" placeholder="votre email">
+        <br>exemple maxlength:<input type="text" name="x" maxlength="6">
         <br>Mot de passe:<input type="password" name="mdp" placeholder="votre password">
         <br>select:<select><option>option1</option>
              <option>option2</option>
@@ -19,9 +20,10 @@
             color:<input type="color">
             <br>date<input type="date">
             <br> date et heure:<input type="datetime-local">
-            <br>nombre <input type="number">
-            <br> choix1 <input type="radio"> choix2:<input type="radio">
-        <br><input type="submit" value="envoyer">
+            <br>nombre <input min="1" max="20" value="10" type="number">
+            <br> choix1 <input name="c" type="radio"> choix2:<input name="c" type="radio">
+            <br>url:<input type="url">
+        <br><input type="submit" value="envoyer"> <input value="vider" type="reset">
 
 
     </form>
