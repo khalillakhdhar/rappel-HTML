@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td colspan="2"><h1>Demande de stage</h1></td>
+            </tr>
+            <tr><td>Nom:</td>
+                <td><input type="text" pattern="[A-Z a-z]{3,20}"  required name="nom" placeholder="votre nom ici"></td>
+            </tr>
+            <tr><td>Prenom:</td>
+                <td><input type="text" required name="prenom" title="le prenom ne peut contenir que des lettres" pattern="[A-Z a-z]{3,20}" placeholder="votre prenom ici"></td>
+            </tr>
+            <tr><td>date naissance:</td>
+                <td><input type="date" required name="daten" placeholder="votre date ici"></td>
+            </tr>
+            <tr><td>Adresse:</td>
+                <td><textarea  required name="adresse" placeholder="votre adresse ici"> </textarea></td>
+            </tr>
+            <tr><td>Code postale:</td>
+                <td><input type="text" pattern="[0-9]{4}" required name="code" placeholder="votre code postale ici"></td>
+            </tr>
+            <tr><td>Bac+:</td>
+                <td><input type="number" min="0" required name="bac" placeholder="+?"></td>
+            </tr>
+            <tr><td>Redoublement:</td>
+                <td><input type="radio"  name="r" value="oui">oui <br>
+                    <input type="radio"  name="r" value="non">non <br>
+                </td>
+            </tr>
+            <tr><td>Email:</td>
+                <td><input type="email" required name="mail" placeholder="votre email ici"></td>
+            </tr>
+            <tr><td>Mot de passe:</td>
+                <td><input type="password" required name="password" placeholder="votre password ici"></td>
+            </tr>
+            <tr><td>LinkedIn:</td>
+                <td><input type="url"  name="linkedin" placeholder="votre profile linkedIn ici"></td>
+            </tr>
+            <tr><td>type de stage:</td>
+                <td><select name="st" required><option>PFE</option>
+                <option>ouvrier</option>
+                <option>ingénieur</option>
+                <option>autre</option>
+                </select></td>
+            </tr>
+            <tr><td colspan="2"><button type="submit">valider</button></td></tr>
+
+
+
+        </table>
+
+
+
+    </form>
+    
+</body>
+</html>
